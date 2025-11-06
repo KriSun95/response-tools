@@ -13,6 +13,32 @@ import response_tools
 print(response_tools.__version__)
 ```
 
+## Version `1.0.3`
+
+[5 Nov. 2025] Updates to the thermal blanketing transmission files and the atmospheric attenuation file.
+
+### Attenuation
+
+- att_thermal_blanket:
+  - No longer exists.
+- att_early_cmos_prefilter
+  - `v1`: attenuation-data/F4_Blanket_transmission_v1.dat
+    - Was att_thermal_blanket.
+- att_modeled_thermal_blanket
+  - `v1`: attenuation-data/FOXSI4_theoretical_thermal_blanket_transmission_v1.fits
+    - Modeled attenuation for the thermal blanket.
+- att_measured_thermal_blanket
+  - `v1`: attenuation-data/FOXSI4_measured_thermal_blanket_transmission_v1.fits
+    - Measured attenuation for the thermal blanket.
+- att_foxsi4_atmosphere:
+  - `v2`: attenuation-data/FOXSI4_atmospheric_transmission_v2.fits
+    - Times can now be selected via seconds from launch or in UTC.
+
+### Example gallery
+
+- Time ranges and the atmospheric response
+  - Example added showing how to choose a time range in the code for atmospheric transmissions.
+
 ## Version `1.0.2`
 
 [30 Oct. 2025] CdTe detector response files now share the same filename format across different versions and are now all supported in the codebase.
@@ -147,3 +173,16 @@ print(response_tools.__version__)
 - qe_cmos_telescope-1:
   - `v1`: quantum-efficiency-data/foxsi4_telescope-1_BASIC_sensor_quantum_efficiency_v1.fits
     - CMOS team prepared detector quantum efficiencies for telescope 1.
+
+### Example gallery
+
+- Functions & Outputs
+  - Shows how to use the functions and their outputs in the package.
+- Create an ARF from scratch
+  - Shows how to compile a telescope ARF from individual components.
+- Example FOXSI-4 RMFs
+  - Shows how to obtain and work with a detector's RMF data-class.
+- Generating and plotting ARFs, RMFs, and SRMs
+  - Shows how to obtain and plot the ARF, RMF, and SRM for Telescope 2.
+- Telescope ARFs, RMFs, and SRMs
+  - Shows a test ``asset`` function to produce a response plot for all of FOXSI-4's telescopes.
