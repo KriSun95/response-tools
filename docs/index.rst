@@ -12,7 +12,7 @@ The repository contains a Python package that can help a user download FOXSI's t
 
 If you'd like to work with photon event lists from the FOXSI-4 flight, please see the `foxsi4-science-tools <https://github.com/foxsi/foxsi4-science-tools>`__ repository instead.
 
-Documentation/help can be found in the `Response Tools Data Guide <https://github.com/foxsi/response-tools/blob/main/Response-Tools-Data-Guide-v1.pdf>`__, the top-level Github repository `README <https://github.com/foxsi/response-tools>`__, and in the `online documentation <https://foxsi.github.io/response-tools/index.html>`__.
+Documentation/help can be found in the `Response Tools Data Guide <https://github.com/foxsi/response-tools/blob/main/Response-Tools-Data-Guide-v2.pdf>`__, the top-level Github repository `README <https://github.com/foxsi/response-tools>`__, and in the `online documentation <https://foxsi.github.io/response-tools/index.html>`__.
 
 .. toctree::
    :maxdepth: 2
